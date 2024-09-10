@@ -42,7 +42,7 @@ public class Counter {
             try{
             Thread.sleep(1000);
             }catch(InterruptedException e){
-                log.error("exception: ", e);
+                log.error("exception: {}", e);
             }
             count++;
 
