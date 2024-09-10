@@ -47,8 +47,8 @@ public class CounterHandler implements Runnable{
                 throw new RuntimeException(e);
             }
             this.count++;
-            System.out.println("thread: " + Thread.currentThread().getName() + ", count: " + count);
-
+            //System.out.println("thread: " + Thread.currentThread().getName() + ", count: " + count);
+            log.debug("thread: {}, count: {}", Thread.currentThread().getName(), count);
 
         }while (count<countMaxSize);
     }
